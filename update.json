@@ -1,6 +1,6 @@
 {
-  "version": "v1.1",
-  "versionCode": 19,
-  "zipUrl": "https://github.com/SimonBaars/magisk-hosts/releases/download/1.1/magisk-hosts-1.1.zip",
-  "changelog": "https://raw.githubusercontent.com/SimonBaars/magisk-hosts/changelog.md"
+  "version": "v1.2",
+  "versionCode": 20,
+  "zipUrl": "https://github.com/SimonBaars/magisk-hosts/releases/download/v1.2/magisk-hosts-1.2.zip",
+  "changelog": "https://raw.githubusercontent.com/SimonBaars/magisk-hosts/master/changelog.md"
 }
