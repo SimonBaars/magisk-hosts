@@ -15,6 +15,6 @@ This module also doesn't feature a complete list of domains, just a select few t
 An Android phone which runs Magisk. Enable "systemless hosts" in the Magisk settings. It should be compatible with pretty much any Android version.
 
 ## Installation
-Download the zip from here: https://github.com/SimonBaars/magisk-hosts/releases/tag/v1.2
+Download the zip from here: https://github.com/SimonBaars/magisk-hosts/releases/tag/v1.3
 
 Flash the zip using Magisk. Reboot when Magisks prompts you to. After reboot, use your browser to go to Youtube.com to test that it works.
