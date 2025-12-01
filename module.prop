@@ -1,7 +1,7 @@
 id=hosts
 name=Hosts
-version=v1.2
-versionCode=20
+version=v1.3
+versionCode=21
 author=SimonBaars
 description=Blocks distracting websites
 updateJson=https://raw.githubusercontent.com/SimonBaars/magisk-hosts/master/update.json
