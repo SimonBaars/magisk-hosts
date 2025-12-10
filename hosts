@@ -46,9 +46,24 @@
 127.0.0.1 www.youtube-nocookie.com
 
 # ========================
-# Other Distracting Sites
+# 9gag
 # ========================
 127.0.0.1 9gag.com
+127.0.0.1 www.9gag.com
+127.0.0.1 m.9gag.com
+127.0.0.1 api.9gag.com
+127.0.0.1 ad.9gag.com
+127.0.0.1 notify.9gag.com
+127.0.0.1 admin.9gag.com
+127.0.0.1 comment-cdn.9gag.com
+127.0.0.1 img-9gag-fun.9cache.com
+127.0.0.1 miscmedia-9gag-fun.9cache.com
+127.0.0.1 assets-9gag-fun.9cache.com
+127.0.0.1 accounts-cdn.9gag.com
+
+# ========================
+# Other Distracting Sites
+# ========================
 127.0.0.1 dumpert.nl
 127.0.0.1 memes.com
 127.0.0.1 reddit.com
@@ -69,7 +84,6 @@
 127.0.0.1 www.memedroid.com
 127.0.0.1 www.ifunny.co
 127.0.0.1 www.itch.io
-127.0.0.1 www.9gag.com
 127.0.0.1 www.dumpert.nl
 127.0.0.1 www.memes.com
 127.0.0.1 www.reddit.com
@@ -89,7 +103,6 @@
 127.0.0.1 youtubeunblocked.live
 127.0.0.1 www.youtubeunblocked.live
 127.0.0.1 thechive.com
-127.0.0.1 m.9gag.com
 127.0.0.1 m.reddit.com
 127.0.0.1 m.facebook.com
 127.0.0.1 m.twitter.com
