@@ -27,6 +27,8 @@
 @@||mail.google.com^
 
 # Block major country-specific Google domains
+127.0.0.1 google.com
+127.0.0.1 www.google.com
 127.0.0.1 google.co.uk
 127.0.0.1 www.google.co.uk
 127.0.0.1 google.ca
