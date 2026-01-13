@@ -7,7 +7,8 @@ A comprehensive hosts file designed to block distracting websites and services w
 This hosts list implements an aggressive blocking strategy targeting:
 
 ### Search Engines (ALL major ones)
-- Google Search (google.com, www.google.com, etc.)
+- Google Search (google.com and all subdomains via wildcard blocking)
+- Google Search country-specific domains (google.co.uk, google.ca, google.de, google.fr, etc.)
 - Bing
 - Yahoo
 - DuckDuckGo
@@ -21,6 +22,7 @@ This hosts list implements an aggressive blocking strategy targeting:
 
 ### Google Services
 - **All googlevideo.com subdomains** (blocks video streaming)
+- **All gstatic.com subdomains** (blocks Google static content/search assets)
 - Google Play Store (play.google.com, play.googleapis.com)
 - Google Maps
 - Google News
@@ -31,7 +33,7 @@ This hosts list implements an aggressive blocking strategy targeting:
 
 **Exceptions (Allowed):**
 - firebase.google.com (for development)
-- gmail.com and its dependencies
+- gmail.com and mail.google.com (email services)
 - accounts.google.com (needed for Gmail authentication)
 
 ### Wikipedia & Educational
@@ -207,7 +209,7 @@ The hosts file is located at: `adguard-restrictive-hosts.txt`
 
 ## Statistics
 
-- **Total Entries**: 350+ blocked domains
+- **Total Entries**: 390+ blocked domains
 - **Categories**: 15+ major categories
 - **Last Updated**: 2026-01-13
 
