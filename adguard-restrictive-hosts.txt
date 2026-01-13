@@ -17,18 +17,73 @@
 # ========================
 
 # Google Search (with exceptions for essential services)
-127.0.0.1 google.com
-127.0.0.1 www.google.com
-127.0.0.1 search.google.com
-127.0.0.1 encrypted.google.com
-127.0.0.1 images.google.com
-127.0.0.1 maps.google.com
-127.0.0.1 news.google.com
-127.0.0.1 books.google.com
-127.0.0.1 shopping.google.com
-127.0.0.1 scholar.google.com
-127.0.0.1 trends.google.com
-127.0.0.1 translate.google.com
+# Use wildcard syntax to block all Google.com subdomains comprehensively
+||google.com^
+
+# Explicitly allow essential Google services (exceptions)
+@@||firebase.google.com^
+@@||accounts.google.com^
+@@||gmail.com^
+@@||mail.google.com^
+
+# Block major country-specific Google domains
+127.0.0.1 google.co.uk
+127.0.0.1 www.google.co.uk
+127.0.0.1 google.ca
+127.0.0.1 www.google.ca
+127.0.0.1 google.com.au
+127.0.0.1 www.google.com.au
+127.0.0.1 google.de
+127.0.0.1 www.google.de
+127.0.0.1 google.fr
+127.0.0.1 www.google.fr
+127.0.0.1 google.co.in
+127.0.0.1 www.google.co.in
+127.0.0.1 google.co.jp
+127.0.0.1 www.google.co.jp
+127.0.0.1 google.it
+127.0.0.1 www.google.it
+127.0.0.1 google.es
+127.0.0.1 www.google.es
+127.0.0.1 google.com.br
+127.0.0.1 www.google.com.br
+127.0.0.1 google.ru
+127.0.0.1 www.google.ru
+127.0.0.1 google.nl
+127.0.0.1 www.google.nl
+127.0.0.1 google.com.mx
+127.0.0.1 www.google.com.mx
+127.0.0.1 google.co.za
+127.0.0.1 www.google.co.za
+127.0.0.1 google.com.sg
+127.0.0.1 www.google.com.sg
+127.0.0.1 google.com.ph
+127.0.0.1 www.google.com.ph
+127.0.0.1 google.com.hk
+127.0.0.1 www.google.com.hk
+127.0.0.1 google.ie
+127.0.0.1 www.google.ie
+127.0.0.1 google.pl
+127.0.0.1 www.google.pl
+127.0.0.1 google.se
+127.0.0.1 www.google.se
+127.0.0.1 google.no
+127.0.0.1 www.google.no
+127.0.0.1 google.fi
+127.0.0.1 www.google.fi
+127.0.0.1 google.dk
+127.0.0.1 www.google.dk
+127.0.0.1 google.be
+127.0.0.1 www.google.be
+127.0.0.1 google.at
+127.0.0.1 www.google.at
+127.0.0.1 google.ch
+127.0.0.1 www.google.ch
+127.0.0.1 google.com.tr
+127.0.0.1 www.google.com.tr
+
+# Block Google static content domains used for search
+||gstatic.com^
 
 # Bing
 127.0.0.1 bing.com
