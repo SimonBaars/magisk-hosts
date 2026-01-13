@@ -84,9 +84,6 @@
 127.0.0.1 google.com.tr
 127.0.0.1 www.google.com.tr
 
-# Block Google static content domains used for search
-||gstatic.com^
-
 # Bing
 127.0.0.1 bing.com
 127.0.0.1 www.bing.com
