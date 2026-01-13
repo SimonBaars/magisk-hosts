@@ -1,0 +1,564 @@
+# Super Restrictive Hosts List for AdGuard
+# This list blocks major search engines, social media, news sites, and other
+# distracting sites, while allowing essential Google services for development.
+#
+# Last Updated: 2026-01-13
+# Compatible with: AdGuard
+#
+# Exceptions:
+# - firebase.google.com (allowed for development)
+# - gmail.com and its dependencies (allowed)
+# - accounts.google.com (needed for Gmail authentication)
+#
+# Usage: Import this file into AdGuard custom filtering rules
+
+# ========================
+# Major Search Engines
+# ========================
+
+# Google Search (with exceptions for essential services)
+127.0.0.1 google.com
+127.0.0.1 www.google.com
+127.0.0.1 search.google.com
+127.0.0.1 encrypted.google.com
+127.0.0.1 images.google.com
+127.0.0.1 maps.google.com
+127.0.0.1 news.google.com
+127.0.0.1 books.google.com
+127.0.0.1 shopping.google.com
+127.0.0.1 scholar.google.com
+127.0.0.1 trends.google.com
+127.0.0.1 translate.google.com
+
+# Bing
+127.0.0.1 bing.com
+127.0.0.1 www.bing.com
+127.0.0.1 search.bing.com
+
+# Yahoo
+127.0.0.1 yahoo.com
+127.0.0.1 www.yahoo.com
+127.0.0.1 search.yahoo.com
+
+# DuckDuckGo
+127.0.0.1 duckduckgo.com
+127.0.0.1 www.duckduckgo.com
+127.0.0.1 start.duckduckgo.com
+
+# Baidu
+127.0.0.1 baidu.com
+127.0.0.1 www.baidu.com
+
+# Yandex
+127.0.0.1 yandex.com
+127.0.0.1 www.yandex.com
+127.0.0.1 yandex.ru
+
+# Ask.com
+127.0.0.1 ask.com
+127.0.0.1 www.ask.com
+
+# AOL Search
+127.0.0.1 aol.com
+127.0.0.1 www.aol.com
+127.0.0.1 search.aol.com
+
+# Ecosia
+127.0.0.1 ecosia.org
+127.0.0.1 www.ecosia.org
+
+# Brave Search
+127.0.0.1 search.brave.com
+
+# Qwant
+127.0.0.1 qwant.com
+127.0.0.1 www.qwant.com
+
+# ========================
+# Google Video (all subdomains)
+# ========================
+||googlevideo.com^
+
+# ========================
+# Google Play Store
+# ========================
+127.0.0.1 play.google.com
+127.0.0.1 play.googleapis.com
+127.0.0.1 androidmarket.com
+127.0.0.1 www.androidmarket.com
+127.0.0.1 market.android.com
+127.0.0.1 android.clients.google.com
+
+# ========================
+# Wikipedia
+# ========================
+127.0.0.1 wikipedia.org
+127.0.0.1 www.wikipedia.org
+127.0.0.1 en.wikipedia.org
+127.0.0.1 es.wikipedia.org
+127.0.0.1 fr.wikipedia.org
+127.0.0.1 de.wikipedia.org
+127.0.0.1 it.wikipedia.org
+127.0.0.1 ja.wikipedia.org
+127.0.0.1 zh.wikipedia.org
+127.0.0.1 ru.wikipedia.org
+127.0.0.1 pt.wikipedia.org
+127.0.0.1 ar.wikipedia.org
+127.0.0.1 m.wikipedia.org
+127.0.0.1 upload.wikimedia.org
+127.0.0.1 wikimedia.org
+127.0.0.1 www.wikimedia.org
+127.0.0.1 commons.wikimedia.org
+127.0.0.1 meta.wikimedia.org
+127.0.0.1 wikidata.org
+127.0.0.1 www.wikidata.org
+127.0.0.1 wikiquote.org
+127.0.0.1 www.wikiquote.org
+127.0.0.1 wiktionary.org
+127.0.0.1 www.wiktionary.org
+127.0.0.1 wikinews.org
+127.0.0.1 www.wikinews.org
+127.0.0.1 wikisource.org
+127.0.0.1 www.wikisource.org
+127.0.0.1 wikibooks.org
+127.0.0.1 www.wikibooks.org
+127.0.0.1 wikiversity.org
+127.0.0.1 www.wikiversity.org
+
+# ========================
+# Major News Sites
+# ========================
+
+# US News
+127.0.0.1 cnn.com
+127.0.0.1 www.cnn.com
+127.0.0.1 edition.cnn.com
+127.0.0.1 nytimes.com
+127.0.0.1 www.nytimes.com
+127.0.0.1 wsj.com
+127.0.0.1 www.wsj.com
+127.0.0.1 washingtonpost.com
+127.0.0.1 www.washingtonpost.com
+127.0.0.1 usatoday.com
+127.0.0.1 www.usatoday.com
+127.0.0.1 latimes.com
+127.0.0.1 www.latimes.com
+127.0.0.1 foxnews.com
+127.0.0.1 www.foxnews.com
+127.0.0.1 nbcnews.com
+127.0.0.1 www.nbcnews.com
+127.0.0.1 abcnews.go.com
+127.0.0.1 cbsnews.com
+127.0.0.1 www.cbsnews.com
+127.0.0.1 bloomberg.com
+127.0.0.1 www.bloomberg.com
+127.0.0.1 reuters.com
+127.0.0.1 www.reuters.com
+127.0.0.1 apnews.com
+127.0.0.1 www.apnews.com
+127.0.0.1 npr.org
+127.0.0.1 www.npr.org
+127.0.0.1 politico.com
+127.0.0.1 www.politico.com
+127.0.0.1 huffpost.com
+127.0.0.1 www.huffpost.com
+127.0.0.1 time.com
+127.0.0.1 www.time.com
+127.0.0.1 newsweek.com
+127.0.0.1 www.newsweek.com
+127.0.0.1 theatlantic.com
+127.0.0.1 www.theatlantic.com
+127.0.0.1 newyorker.com
+127.0.0.1 www.newyorker.com
+127.0.0.1 fortune.com
+127.0.0.1 www.fortune.com
+127.0.0.1 forbes.com
+127.0.0.1 www.forbes.com
+127.0.0.1 businessinsider.com
+127.0.0.1 www.businessinsider.com
+127.0.0.1 vice.com
+127.0.0.1 www.vice.com
+127.0.0.1 vox.com
+127.0.0.1 www.vox.com
+127.0.0.1 slate.com
+127.0.0.1 www.slate.com
+127.0.0.1 thehill.com
+127.0.0.1 www.thehill.com
+127.0.0.1 axios.com
+127.0.0.1 www.axios.com
+
+# UK News
+127.0.0.1 bbc.com
+127.0.0.1 www.bbc.com
+127.0.0.1 bbc.co.uk
+127.0.0.1 www.bbc.co.uk
+127.0.0.1 theguardian.com
+127.0.0.1 www.theguardian.com
+127.0.0.1 telegraph.co.uk
+127.0.0.1 www.telegraph.co.uk
+127.0.0.1 independent.co.uk
+127.0.0.1 www.independent.co.uk
+127.0.0.1 dailymail.co.uk
+127.0.0.1 www.dailymail.co.uk
+127.0.0.1 mirror.co.uk
+127.0.0.1 www.mirror.co.uk
+127.0.0.1 thesun.co.uk
+127.0.0.1 www.thesun.co.uk
+127.0.0.1 express.co.uk
+127.0.0.1 www.express.co.uk
+127.0.0.1 standard.co.uk
+127.0.0.1 www.standard.co.uk
+127.0.0.1 ft.com
+127.0.0.1 www.ft.com
+
+# International News
+127.0.0.1 aljazeera.com
+127.0.0.1 www.aljazeera.com
+127.0.0.1 rt.com
+127.0.0.1 www.rt.com
+127.0.0.1 news.sky.com
+127.0.0.1 euronews.com
+127.0.0.1 www.euronews.com
+127.0.0.1 france24.com
+127.0.0.1 www.france24.com
+127.0.0.1 dw.com
+127.0.0.1 www.dw.com
+127.0.0.1 spiegel.de
+127.0.0.1 www.spiegel.de
+127.0.0.1 lemonde.fr
+127.0.0.1 www.lemonde.fr
+127.0.0.1 elpais.com
+127.0.0.1 www.elpais.com
+
+# Tech News
+127.0.0.1 techcrunch.com
+127.0.0.1 www.techcrunch.com
+127.0.0.1 theverge.com
+127.0.0.1 www.theverge.com
+127.0.0.1 wired.com
+127.0.0.1 www.wired.com
+127.0.0.1 engadget.com
+127.0.0.1 www.engadget.com
+127.0.0.1 arstechnica.com
+127.0.0.1 www.arstechnica.com
+127.0.0.1 cnet.com
+127.0.0.1 www.cnet.com
+127.0.0.1 zdnet.com
+127.0.0.1 www.zdnet.com
+127.0.0.1 gizmodo.com
+127.0.0.1 www.gizmodo.com
+127.0.0.1 mashable.com
+127.0.0.1 www.mashable.com
+127.0.0.1 venturebeat.com
+127.0.0.1 www.venturebeat.com
+
+# News Aggregators
+127.0.0.1 flipboard.com
+127.0.0.1 www.flipboard.com
+127.0.0.1 feedly.com
+127.0.0.1 www.feedly.com
+
+# ========================
+# Social Media Platforms
+# ========================
+
+# Facebook/Meta
+127.0.0.1 facebook.com
+127.0.0.1 www.facebook.com
+127.0.0.1 m.facebook.com
+127.0.0.1 mobile.facebook.com
+127.0.0.1 web.facebook.com
+127.0.0.1 messenger.com
+127.0.0.1 www.messenger.com
+127.0.0.1 fb.com
+127.0.0.1 www.fb.com
+127.0.0.1 fbcdn.net
+127.0.0.1 connect.facebook.net
+127.0.0.1 meta.com
+127.0.0.1 www.meta.com
+
+# Twitter/X
+127.0.0.1 twitter.com
+127.0.0.1 www.twitter.com
+127.0.0.1 mobile.twitter.com
+127.0.0.1 m.twitter.com
+127.0.0.1 x.com
+127.0.0.1 www.x.com
+127.0.0.1 t.co
+127.0.0.1 api.twitter.com
+127.0.0.1 twimg.com
+
+# Instagram
+127.0.0.1 instagram.com
+127.0.0.1 www.instagram.com
+127.0.0.1 m.instagram.com
+127.0.0.1 api.instagram.com
+127.0.0.1 cdninstagram.com
+
+# TikTok
+127.0.0.1 tiktok.com
+127.0.0.1 www.tiktok.com
+127.0.0.1 m.tiktok.com
+127.0.0.1 musically.ly
+127.0.0.1 www.musically.ly
+
+# LinkedIn
+127.0.0.1 linkedin.com
+127.0.0.1 www.linkedin.com
+127.0.0.1 m.linkedin.com
+
+# Reddit
+127.0.0.1 reddit.com
+127.0.0.1 www.reddit.com
+127.0.0.1 old.reddit.com
+127.0.0.1 m.reddit.com
+127.0.0.1 i.reddit.com
+127.0.0.1 redd.it
+127.0.0.1 v.redd.it
+127.0.0.1 i.redd.it
+
+# Pinterest
+127.0.0.1 pinterest.com
+127.0.0.1 www.pinterest.com
+127.0.0.1 m.pinterest.com
+127.0.0.1 pin.it
+
+# Snapchat
+127.0.0.1 snapchat.com
+127.0.0.1 www.snapchat.com
+
+# WhatsApp
+127.0.0.1 web.whatsapp.com
+127.0.0.1 whatsapp.com
+127.0.0.1 www.whatsapp.com
+
+# Telegram
+127.0.0.1 web.telegram.org
+127.0.0.1 telegram.org
+127.0.0.1 www.telegram.org
+127.0.0.1 t.me
+
+# Discord (web version only - desktop app may still work)
+127.0.0.1 discord.com
+127.0.0.1 www.discord.com
+
+# Tumblr
+127.0.0.1 tumblr.com
+127.0.0.1 www.tumblr.com
+
+# Mastodon (major instances)
+127.0.0.1 mastodon.social
+127.0.0.1 mstdn.social
+
+# Threads
+127.0.0.1 threads.net
+127.0.0.1 www.threads.net
+
+# Twitch
+127.0.0.1 twitch.tv
+127.0.0.1 www.twitch.tv
+127.0.0.1 m.twitch.tv
+
+# ========================
+# Video/Entertainment Platforms
+# ========================
+
+# YouTube (already blocked via googlevideo.com)
+127.0.0.1 youtube.com
+127.0.0.1 www.youtube.com
+127.0.0.1 m.youtube.com
+127.0.0.1 youtu.be
+127.0.0.1 youtube-nocookie.com
+127.0.0.1 www.youtube-nocookie.com
+127.0.0.1 ytimg.com
+
+# Netflix
+127.0.0.1 netflix.com
+127.0.0.1 www.netflix.com
+
+# Hulu
+127.0.0.1 hulu.com
+127.0.0.1 www.hulu.com
+
+# Disney+
+127.0.0.1 disneyplus.com
+127.0.0.1 www.disneyplus.com
+
+# Prime Video
+127.0.0.1 primevideo.com
+127.0.0.1 www.primevideo.com
+
+# HBO Max
+127.0.0.1 hbomax.com
+127.0.0.1 www.hbomax.com
+127.0.0.1 max.com
+127.0.0.1 www.max.com
+
+# Vimeo
+127.0.0.1 vimeo.com
+127.0.0.1 www.vimeo.com
+127.0.0.1 player.vimeo.com
+
+# Dailymotion
+127.0.0.1 dailymotion.com
+127.0.0.1 www.dailymotion.com
+
+# Spotify (web player)
+127.0.0.1 open.spotify.com
+
+# ========================
+# Shopping & E-commerce
+# ========================
+
+# Amazon (main shopping site, not AWS)
+127.0.0.1 amazon.com
+127.0.0.1 www.amazon.com
+127.0.0.1 smile.amazon.com
+
+# eBay
+127.0.0.1 ebay.com
+127.0.0.1 www.ebay.com
+
+# AliExpress
+127.0.0.1 aliexpress.com
+127.0.0.1 www.aliexpress.com
+
+# Etsy
+127.0.0.1 etsy.com
+127.0.0.1 www.etsy.com
+
+# Walmart
+127.0.0.1 walmart.com
+127.0.0.1 www.walmart.com
+
+# Target
+127.0.0.1 target.com
+127.0.0.1 www.target.com
+
+# ========================
+# Gaming & Entertainment
+# ========================
+
+# Steam Store (not client)
+127.0.0.1 store.steampowered.com
+
+# Epic Games Store
+127.0.0.1 epicgames.com
+127.0.0.1 www.epicgames.com
+
+# IGN
+127.0.0.1 ign.com
+127.0.0.1 www.ign.com
+
+# GameSpot
+127.0.0.1 gamespot.com
+127.0.0.1 www.gamespot.com
+
+# Polygon
+127.0.0.1 polygon.com
+127.0.0.1 www.polygon.com
+
+# ========================
+# Other Popular Sites
+# ========================
+
+# IMDb
+127.0.0.1 imdb.com
+127.0.0.1 www.imdb.com
+
+# Quora
+127.0.0.1 quora.com
+127.0.0.1 www.quora.com
+
+# Medium
+127.0.0.1 medium.com
+127.0.0.1 www.medium.com
+
+# BuzzFeed
+127.0.0.1 buzzfeed.com
+127.0.0.1 www.buzzfeed.com
+
+# 9gag
+127.0.0.1 9gag.com
+127.0.0.1 www.9gag.com
+
+# Imgur
+127.0.0.1 imgur.com
+127.0.0.1 www.imgur.com
+127.0.0.1 i.imgur.com
+
+# Giphy
+127.0.0.1 giphy.com
+127.0.0.1 www.giphy.com
+
+# ========================
+# Educational (non-dev)
+# ========================
+
+# Coursera
+127.0.0.1 coursera.org
+127.0.0.1 www.coursera.org
+
+# Udemy (except dev courses - use at your discretion)
+127.0.0.1 udemy.com
+127.0.0.1 www.udemy.com
+
+# Khan Academy
+127.0.0.1 khanacademy.org
+127.0.0.1 www.khanacademy.org
+
+# ========================
+# Dating & Lifestyle
+# ========================
+
+# Tinder
+127.0.0.1 tinder.com
+127.0.0.1 www.tinder.com
+
+# Bumble
+127.0.0.1 bumble.com
+127.0.0.1 www.bumble.com
+
+# Match
+127.0.0.1 match.com
+127.0.0.1 www.match.com
+
+# ========================
+# Sports
+# ========================
+
+# ESPN
+127.0.0.1 espn.com
+127.0.0.1 www.espn.com
+
+# Bleacher Report
+127.0.0.1 bleacherreport.com
+127.0.0.1 www.bleacherreport.com
+
+# Sports Illustrated
+127.0.0.1 si.com
+127.0.0.1 www.si.com
+
+# ========================
+# Travel & Booking
+# ========================
+
+# Booking.com
+127.0.0.1 booking.com
+127.0.0.1 www.booking.com
+
+# Airbnb
+127.0.0.1 airbnb.com
+127.0.0.1 www.airbnb.com
+
+# Expedia
+127.0.0.1 expedia.com
+127.0.0.1 www.expedia.com
+
+# TripAdvisor
+127.0.0.1 tripadvisor.com
+127.0.0.1 www.tripadvisor.com
+
+# ========================
+# End of Super Restrictive Hosts List
+# ========================
