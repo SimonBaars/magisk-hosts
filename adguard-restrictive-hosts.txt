@@ -79,13 +79,6 @@
 # ========================
 ||googlevideo.com^
 127.0.0.1 googlevideo.com
-127.0.0.1 *.googlevideo.com
-127.0.0.1 r1---sn-5hne6nsk.googlevideo.com
-127.0.0.1 r2---sn-5hne6nsk.googlevideo.com
-127.0.0.1 r3---sn-5hne6nsk.googlevideo.com
-127.0.0.1 r4---sn-5hne6nsk.googlevideo.com
-127.0.0.1 r5---sn-5hne6nsk.googlevideo.com
-127.0.0.1 r6---sn-5hne6nsk.googlevideo.com
 
 # ========================
 # Google Play Store
@@ -261,7 +254,6 @@
 127.0.0.1 www.venturebeat.com
 
 # News Aggregators
-127.0.0.1 news.google.com
 127.0.0.1 flipboard.com
 127.0.0.1 www.flipboard.com
 127.0.0.1 feedly.com
