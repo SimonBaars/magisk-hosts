@@ -207,7 +207,7 @@ The hosts file is located at: `adguard-restrictive-hosts.txt`
 
 ## Statistics
 
-- **Total Entries**: 570+ blocked domains
+- **Total Entries**: 350+ blocked domains
 - **Categories**: 15+ major categories
 - **Last Updated**: 2026-01-13
 

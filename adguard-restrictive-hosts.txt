@@ -78,7 +78,6 @@
 # Google Video (all subdomains)
 # ========================
 ||googlevideo.com^
-127.0.0.1 googlevideo.com
 
 # ========================
 # Google Play Store
