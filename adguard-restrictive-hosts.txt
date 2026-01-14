@@ -16,10 +16,6 @@
 # Major Search Engines
 # ========================
 
-# Google Search (with exceptions for essential services)
-# Use wildcard syntax to block all Google.com subdomains comprehensively
-||google.com^
-
 # Explicitly allow essential Google services (exceptions)
 @@||firebase.google.com^
 @@||accounts.google.com^
